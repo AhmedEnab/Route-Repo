@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal padge">
+  <meta name="keyword" content=" Bookmark ">
+  <title>Bookmark</title>
+  <!-- Font Awesome Liberary -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- font-family: "Pacifico", cursive; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- font-family: "Righteous", sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <!-- font-family: "PT Sans Caption", sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Main Templat Bootstrap File -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Media Queries -->
+  <link rel="stylesheet" href="./css/media.css">
+  <!-- Favicon -->
+  <link rel="icon" href="./images/badge.png">
+
+</head>
+
+<body>
+  <div class="bookmarker">
+    <div class="container p-5">
+      <div class="top w-100 d-flex justify-content-center  pt-4 pb-5 ">
+        <h1>Bookmarker</h1>
+      </div>
+      <div class="center  py-4">
+        <h2 class="u_head d-flex justify-content-center align-items-center text-danger fs-4  "> <i
+            class="fa-solid fa-bookmark "></i> <span class="px-2">Bookmark your favorite sites</span> <i
+            class="fa-solid fa-bookmark "></i> </h2>
+        <div>
+          <div class="d-flex flex-column  align-items-center  ">
+            <div class=" mb-4 w-100  ">
+              <label for="basic-name"><i class="fa-solid fa-book-bookmark pe-2"></i> <span class="fw-bold ">Site
+                  Name</span></label>
+              <input id="basic-name" type="text" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div class=" mb-4 w-100">
+              <label for="basic-url"> <i class="fa-solid fa-link pe-2"></i> <span class="fw-bold ">Site
+                  URL</span></label>
+              <input type="text" class="form-control" id="basic-url" placeholder="Website URL">
+            </div>
+            <button type="submit" class="btn btn-outline-danger" onclick="getDate()">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom mt-4">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="demo">
+            
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- __________ JS Files ________________ -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  </div>
+</body>
+
+</html>
